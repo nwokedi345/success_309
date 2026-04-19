@@ -6,7 +6,7 @@ from PIL import Image
 import urllib.request
 
 # --- 1. UI CONFIG ---
-st.set_page_config(page_title="DeepVision Classifier", page_icon="🔍", layout="wide")
+st.set_page_config(page_title="Image Classifier", page_icon="🔍", layout="wide")
 
 # --- 2. PROFESSIONAL BLUE & WHITE CSS ---
 st.markdown("""
@@ -60,8 +60,8 @@ def load_ai_engine():
 # --- 4. SUCCESS'S DASHBOARD ---
 st.markdown("""
 <div class="tech-header">
-    <h1>🔍 DeepVision AI Image Classifier</h1>
-    <p><b>Developer:</b> Samuel Success Akachukwu | <b>Task 9</b> | CSC 309</p>
+    <h1>🔍 DeepVision AI Classifier</h1>
+    <p><b>Developer:</b> Samuel Success Akachukwu| 20231369212 | <b>Task 9</b> | CSC 309</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -100,21 +100,21 @@ with col_ai:
                 if 151 <= cid <= 268: # Dog
                     st.markdown(f"""
                     <div class="card-dog">
-                        <div class="card-title">CANINE DETECTED</div>
+                        <div class="card-title">DOG DETECTED 🐶</div>
                         <div class="card-data"><b>Classification:</b> {label}<br><b>Accuracy Score:</b> {conf:.2f}%</div>
                     </div>
                     """, unsafe_allow_html=True)
                 elif 281 <= cid <= 285: # Cat
                     st.markdown(f"""
                     <div class="card-cat">
-                        <div class="card-title">FELINE DETECTED</div>
+                        <div class="card-title">CAT DETECTED 🐱</div>
                         <div class="card-data"><b>Classification:</b> {label}<br><b>Accuracy Score:</b> {conf:.2f}%</div>
                     </div>
                     """, unsafe_allow_html=True)
                 else: # Other
                     st.markdown(f"""
                     <div class="card-null">
-                        <div class="card-title">UNKNOWN ENTITY</div>
+                        <div class="card-title">UNKNOWN ENTITY ❌</div>
                         <div class="card-data"><b>Prediction:</b> {label}<br><b>Accuracy Score:</b> {conf:.2f}%</div>
                     </div>
                     """, unsafe_allow_html=True)
