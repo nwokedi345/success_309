@@ -60,7 +60,7 @@ def load_ai_engine():
 # --- 4. SUCCESS'S DASHBOARD ---
 st.markdown("""
 <div class="tech-header">
-    <h1>🔍 DeepVision AI Classifier</h1>
+    <h1>🔍 AI Image Classifier</h1>
     <p><b>Developer:</b> Samuel Success Akachukwu| 20231369212 | <b>Task 9</b> | CSC 309</p>
 </div>
 """, unsafe_allow_html=True)
